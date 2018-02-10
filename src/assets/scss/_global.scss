@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+html, body {
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position:relative;
+}
+
+h1 {
+  color: $chdefault;
+  font-weight: bolder;
+}
+
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+  text-transform: none;
+  color:$chdefault;
+
+}
