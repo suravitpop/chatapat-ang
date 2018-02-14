@@ -1,15 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AlertModule } from 'ngx-bootstrap';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { RoutingModule } from './routing/routing.module';
+
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { AppRoutingModule } from './app-routing/app-routing.module';
-import { VideoComponent } from './video/video.component';
 import { EventsComponent } from './events/events.component';
-import { HomeComponent } from './home/home.component';
+import { VideosComponent } from './videos/videos.component';
+import { HomesComponent } from './homes/homes.component';
 
 
 @NgModule({
@@ -17,15 +16,13 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     NavComponent,
     FooterComponent,
-    VideoComponent,
     EventsComponent,
-    HomeComponent
+    VideosComponent,
+    HomesComponent
   ],
   imports: [
-  	AlertModule.forRoot(),
-  	BsDropdownModule.forRoot(),
     BrowserModule,
-    AppRoutingModule
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

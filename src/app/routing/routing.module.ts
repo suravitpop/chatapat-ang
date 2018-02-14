@@ -3,20 +3,19 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { EventsComponent } from '../events/events.component';
-import { VideoComponent } from '../video/video.component';
-import { HomeComponent } from '../home/home.component';
+import { VideosComponent } from '../videos/videos.component';
+import { HomesComponent } from '../homes/homes.component';
 
-
-    const routes: Routes = [
+ const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: HomesComponent
     },{
         path: 'events',
         component: EventsComponent
     },{
         path: 'video',
-        component: VideoComponent
+        component: VideosComponent
     },
     
 ];
@@ -26,9 +25,9 @@ import { HomeComponent } from '../home/home.component';
     CommonModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [
+   exports: [
   	RouterModule
   ],
   declarations: []
 })
-export class AppRoutingModule { }
+export class RoutingModule { }
