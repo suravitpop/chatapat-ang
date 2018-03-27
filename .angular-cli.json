@@ -21,7 +21,9 @@
       "styles": [
         "assets/scss/main.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/global.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
